@@ -106,6 +106,6 @@ public class LoginActivity extends AppCompatActivity implements LoginView{
     }
 
     public void goToContainerActivity(View view) {
-        goToContainerActivity();
+        goToContainerActivity(); // revisar
     }
 }
