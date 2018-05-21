@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.oaacelasu.damien.LoginActivity;
+import com.oaacelasu.damien.login.view.LoginActivity;
 import com.oaacelasu.damien.R;
 
 public class CreateAccountActivity extends AppCompatActivity {
