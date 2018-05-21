@@ -1,0 +1,110 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".view.fragments.UserFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarUser"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary"
+            >
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pictureUserRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="270dp"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:dependsOn="@+id/appBarUser"
+        app:dependType="y"
+        app:dependTargetY="90dp"
+        app:targetY="-300dp"
+        app:targetAlpha="1"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/dimen_circleimageprofile"
+        android:layout_height="@dimen/dimen_circleimageprofile"
+        android:src="@drawable/image"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="@dimen/margintop_circleprofile"
+        android:elevation="@dimen/elevation_circleprofile"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:dependsOn="@+id/appBarUser"
+        app:dependType = "y"
+        app:dependTargetY = "-40dp"
+        app:targetX="16dp"
+        app:targetY = "5dp"
+        app:targetWidth = "40dp"
+        app:targetHeight = "40dp"
+        />
+
+    <TextView
+        android:id="@+id/usernameToolbarProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_card"
+        android:textSize="30sp"
+        android:elevation="@dimen/elevation_circleprofile"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:alpha="1"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:dependsOn="@+id/appBarUser"
+        app:dependType="y"
+        app:dependTargetY="50dp"
+        app:targetY="-10dp"
+        app:targetAlpha="0"
+        />
+
+    <TextView
+        android:id="@+id/usernameToolbarProfile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_card"
+        android:textSize="@dimen/textsize_usernametoolbarprofile"
+        android:elevation="@dimen/elevation_circleprofile"
+        android:layout_marginLeft="@dimen/marginleft_usernametoolbarprofile"
+        android:layout_marginTop="-20dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/white"
+        android:alpha="0"
+        app:layout_behavior="com.zoonref.SimpleViewBehavior"
+        app:dependsOn="@+id/appBarUser"
+        app:dependType="y"
+        app:dependTargetY="-10dp"
+        app:targetY="15dp"
+        app:targetAlpha="1"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

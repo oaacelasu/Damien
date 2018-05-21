@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Damien</string>
+    <string name="title_activity_reference">ReferenceActivity</string>
+    <string name="hint_username">Nombre de usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="text_button_login">Ingresar</string>
+    <string name="dont_have_account">¿No tienes cuenta?,</string>
+    <string name="create_here">crea una aquí</string>
+    <string name="hint_email">Correo</string>
+    <string name="hint_name_create_account">Nombre</string>
+    <string name="hint_username_create_account">Usuario</string>
+    <string name="hint_password_confirm">Confirmar contraseña</string>
+    <string name="hint_button_create_account">Únete</string>
+    <string name="create_account_title_toolbar">Crear cuenta</string>
+    <string name="tab_home">Inicio</string>
+    <string name="tab_search">Buscar</string>
+    <string name="tab_user">Perfil</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username_card">Oscar Acelas</string>
+    <string name="firstword_card">Hace</string>
+    <string name="timecard_card">4 dias</string>
+    <string name="likenumbercard_card">Me gusta</string>
+    <string name="home_fragment_tittle">Inicio</string>
+    <string name="searchhinttext">Buscar</string>
+    <string name="transitionname_picture">transitionname_picture</string>
+    <string name="secondword_detail">Me Gusta</string>
+    <string name="titleimagedetail">\"Todo copas en la playa\"</string>
+    <string name="lorem">Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia.</string>
+</resources>
